@@ -6,7 +6,7 @@ import numpy as np
 best_soln=0
 
 def problem(x):
-    return 20*x**2+20*x-25
+    return 20*x**2+20*x-55
 
 def fitness(x):
     soln=problem(x)
@@ -33,7 +33,7 @@ for g in range(10000):
     rankedSolutions.sort(reverse=True)
 
 
-    if rankedSolutions[0][0] > 999:
+    if rankedSolutions[0][0] > 9999:
         best_soln=rankedSolutions[0]
         break
 
